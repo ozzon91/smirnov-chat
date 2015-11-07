@@ -1,0 +1,19 @@
+{
+  "name": "chat",
+  "version": "0.0.1",
+  "private": "true",
+  "scripts": {
+    "start": "nodejs server.js"
+  },
+  "devDependencies": {
+    "gulp": "latest"
+  },
+  "dependencies": {
+    "serve-static": "latest",
+    "colors": "latest",
+    "connect": "latest",
+    "cookie": "^0.2.3",
+    "underscore": "^1.8.3",
+    "websocket": "latest"
+  }
+}

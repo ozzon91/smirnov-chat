@@ -1,0 +1,120 @@
+body {
+	font-family: arial;
+	overflow: hidden;
+}
+
+.wrapper {
+	display: none;
+}
+
+.l-side {
+	position: absolute;
+	top: 0; left: 0; bottom: 0;
+	width: 280px;
+	background: #f5fcfe;
+	overflow-y: auto; 
+}
+
+.r-side {
+	position: absolute;
+	top: 0; left: 280px; bottom: 0; right: 0;
+	background: #fff;
+	overflow-y: auto;
+}
+
+.sent-cont {
+	border-top: 1px solid #66cff6;
+	position: fixed;
+	left: 280px; bottom: 0; right: 0;
+	height: 80px;
+	background: #fff;
+}
+
+#my-msg {
+	border: 1px solid #66cff6;
+	background: #e5f7fd;
+	width: 450px;
+	height: 35px;
+	padding: 3px;
+	font-family: arial;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+
+#send {
+	color: #fff;
+    background: #22ace4;
+    height: 43px;
+    line-height: 43px;
+    width: 60px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    top: -16px;
+    left: 10px
+}
+
+#send:hover {
+	opacity: .8;
+}
+
+.list-msg {
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+
+.list-msg > li {
+	font-size: 13px;
+	list-style: none;
+	background: #c7edfc;
+	padding: 10px;
+	margin: 35px 20px;
+	border-radius: 5px;
+}
+
+.author {
+	color: #a2c5db;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: -29px;
+    margin-bottom: 10px;
+}
+
+/**/
+
+.login-wrapper {
+	background: #f5fcfe;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+}
+
+.login-bl {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	height: 300px;
+	margin-top: -150px;
+	margin-left: -200px;
+	text-align: center;
+}
+
+.on-bl {
+	font-size: 13px;
+	margin: 20px;
+}
+
+.on-bl > ul > li {
+	list-style: none;
+	font-weight: bold;
+}
+
+.my-block {
+	border-bottom: 1px solid #66cff6;
+	margin-bottom: 20px;
+}
+
+#bip {
+	display: none;
+}

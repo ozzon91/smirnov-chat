@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OzChat</title>
+
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/chat.css">
+
+	<script src="/js/jquery.js"></script>
+	<script src="/node_modules/underscore/underscore-min.js"></script>
+
+</head>
+<body>
+
+
+
+<section class="login-wrapper">
+	<div class="login-bl">
+		<div>Для входа в чат придумайте себе ник</div>
+		<input type="text" name="login" placeholder="Ник"> <button id="enter">войти</button>
+	</div>
+</section>
+
+<section class="wrapper">
+	<section class="l-side">
+		<div class="on-bl">
+			<div class="my-block">Вы: <span id="iam"></span></div>
+			<div>Юзеры онлайн:</div>
+			<ul id="online-list">
+			</ul>
+		</div>
+	</section>
+
+	<section class="r-side">
+		<ul class="list-msg"></ul>
+	
+		<div class="sent-cont">
+			<textarea id="my-msg"></textarea>
+	
+			<div id="send">Send</div>
+		</div>
+	</section>
+
+	<audio aytoplay="false" id="bip" src="/bip.mp3"></audio>
+</section>
+
+<!-- tpl -->
+
+<script type="text/tpl" id="t-msg">
+	<% _.each(log, function(msg, n) { %>
+		<li>
+			<div class="author"><%-msg.login%></div>
+			
+			<div>
+				<span>Date: <%=msg.time%></span>
+				<div>
+					<%-msg.msg%>
+				</div>
+			</div>
+		</li>
+	<% }); %>
+</script>
+
+<script type="text/tpl" id="t-online">
+	<% _.each(users, function(u, n) { %>
+		<li><%-u%></li>
+	<% }); %>
+</script>
+
+
+<script src="/js/app.js"></script>
+</body>
+</html>
